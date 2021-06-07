@@ -1,25 +1,90 @@
 ---
 ---
+// Variables
+$navHeight: 70px;
+
+// Globals
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
+section {
+    height: 100vh;
+}
+
 .heading {
+    font-size: 80px;
+    font-weight: 300;
+
+    padding-top: 80px;
+    text-align: center;
+}
+
+.projects_wrapper {
+    display: grid;
+    justify-content: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.projects_wrapper img {
+    display: block;
+    width: 100px;
+    margin: 0px auto;
+}
+
+// Nav
+nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: $navHeight;
+    background-color: rgba(255, 188, 111, 0.5);
+}
+
+nav span {
+    font-family: 'Fugaz One', cursive;
+    float: left;
+
+    line-height: $navHeight;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+nav .socials{
+    float: right;
+
+    a {
+        margin-right: 17px;
+    }
+    img {
+        height: 40px;
+        transition: transform 300ms;
+        
+        &:hover {
+            transform: translate(0, -7px);
+        }
+    }
+    
+}
+
+// Landing section
+#landing_heading {
     font-size: 100px;
     padding-bottom: 13px;
-    line-height: 0px;
-    color: #1d1d1d;
+    color: #2c2c2c;
 }
-.description {
+
+#landing_heading span {
+    color: #da1212;
+    text-shadow: 5px 5px 10px #fd6363
+}
+#landing_description {
     font-size: 30px;
     line-height: 1.5;
     color: #2c2c2c;
-}
-    
-// Landing section
-#landing {
-    height: 100vh;
 }
 
 #landing_text {
@@ -28,13 +93,13 @@
     left: 5%;
 }
 
-#socials {
+.socials {
     text-align: right;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-right: 15px;
 
     a {
-        
+        margin-right: 17px;
     }
     img {
         height: 40px;
@@ -46,8 +111,24 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
-    #landing {
-        height: 60vh;
-    }
-}
+// @media screen and (max-width: 1000px) {
+//     #landing {
+//         height: 70vh;
+//     }
+//     #landing_heading {
+//         padding-bottom: 35px;
+//     }
+//     #landing_description {
+//         font-size: 40px;
+//     }
+//     .socials {
+//         a {
+//             margin-right: 30px;
+//         }
+//         img {
+//             height: 70px;
+//         }
+//     }
+// }
+
+// Projects Section
