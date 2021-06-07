@@ -1,0 +1,53 @@
+---
+---
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.heading {
+    font-size: 100px;
+    padding-bottom: 13px;
+    line-height: 0px;
+    color: #1d1d1d;
+}
+.description {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #2c2c2c;
+}
+    
+// Landing section
+#landing {
+    height: 100vh;
+}
+
+#landing_text {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+#socials {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 15px;
+
+    a {
+        
+    }
+    img {
+        height: 40px;
+        transition: transform 300ms;
+        
+        &:hover {
+            transform: translate(0, -7px);
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #landing {
+        height: 60vh;
+    }
+}
