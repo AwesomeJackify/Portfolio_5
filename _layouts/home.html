@@ -41,8 +41,9 @@
 
 	<script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/three.r119.min.js"></script>
+	<script src="/assets/js/p5.min.js"></script>
     <script src="/assets/js/vanta.fog.min.js"></script>
-	<script src="/assets/js/vanta.birds.min.js"></script>
+	<script src="/assets/js/vanta.topology.min.js"></script>
     <script>
 		VANTA.FOG({
 			el: "#landing",
@@ -60,7 +61,7 @@
 	</script>
 	<script>
 		if($(window).width()>=1000) {
-			VANTA.BIRDS({
+			VANTA.TOPOLOGY({
 			el: "#projects",
 			mouseControls: false,
 			touchControls: false,
@@ -69,15 +70,9 @@
 			minWidth: 200.00,
 			scale: 1.00,
 			scaleMobile: 1.00,
-			backgroundColor: 0xffffff,
-			birdSize: 1.90,
-			wingSpan: 22.00,
-			speedLimit: 2.00,
-			separation: 26.00,
-			alignment: 13.00,
-			cohesion: 1,
-			quantity: 2.00
-		})
+			color: 0xf9d519,
+			backgroundColor: 0xffffff
+			})
 		}
 	</script>
 	<script type="text/javascript" src="/assets/js/main.js"></script>
