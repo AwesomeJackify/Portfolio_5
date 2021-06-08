@@ -29,8 +29,6 @@ url: "https://awesomejackify.github.io" # the base hostname & protocol for your 
 # twitter_username: jekyllrb
 github_username:  AwesomeJackify
 
-root: /
-
 # Build settings
 theme: minima
 plugins:
