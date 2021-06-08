@@ -5,6 +5,7 @@
         <title>Jack Gong</title>
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/normalise.css">
+		<link rel="icon" type="image/png" href="/assets/img/favicon.png">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
@@ -33,7 +34,7 @@
 
 			<div id="projects_wrapper">
 				{% for post in site.posts %}
-					{% include project.html header=post.title img=post.img framework=post.framework demo_url=post.demo_url %}
+					{% include project.html header=post.title img=post.img framework=post.framework demo_url=post.demo_url github_url=post.github_url %}
 				{% endfor %}
 			</div>
 		</section>

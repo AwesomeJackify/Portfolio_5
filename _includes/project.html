@@ -5,6 +5,9 @@
         <img class="framework_img" src="{{ include.framework }}" />
     </div>
     {% if include.demo_url != "" %}
-        <button class="project_demo_btn" onclick="location.href={{ include.demo_url }}" type="button" target="_blank">View Demo</button>
+        <a class="project_btn project_btn_demo" href="{{ include.demo_url }}" target="_blank">View Demo</a>
+    {% endif %}
+    {% if include.github_url != "" %}
+        <a class="project_btn project_btn_gh" href="{{ include.github_url }}" target="_blank">View Repo</a>
     {% endif %}
 </div>
