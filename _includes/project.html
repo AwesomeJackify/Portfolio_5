@@ -1,8 +1,8 @@
 <div id="project_wrapper">
     <h1>{{ include.header }}</h1>
     <div class="img_and_framework">
-        <img class="project_img" src="{{ include.img}}" alt="{{ include.header }}" />
-        <img class="framework_img" src="{{ include.framework }}" />
+        <img class="project_img" src="{{site.baseurl}}{{ include.img}}" alt="{{ include.header }}" />
+        <img class="framework_img" src="{{site.baseurl}}{{ include.framework }}" />
     </div>
     {% if include.demo_url != "" %}
         <a class="project_btn project_btn_demo" href="{{ include.demo_url }}" target="_blank">View Demo</a>
