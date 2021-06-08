@@ -18,9 +18,9 @@
 
         <section id="landing">
 			<div class="socials">
-				<a href="https://github.com/AwesomeJackify" target="_blank"><img src="/assets/img/github.svg" alt="Github"/></a>
-				<a href="https://www.instagram.com/jackifygong/" target="_blank"><img src="/assets/img/instagram.svg" alt="Instagram"/></a>
-				<a href="https://www.linkedin.com/in/jack-gong/" target="_blank"><img src="/assets/img/linkedin.svg" alt="LinkedIn"/></a>
+				<a href="https://github.com/AwesomeJackify" target="_blank"><img src="/assets/img/icons/github.svg" alt="Github"/></a>
+				<a href="https://www.instagram.com/jackifygong/" target="_blank"><img src="/assets/img/icons/instagram.svg" alt="Instagram"/></a>
+				<a href="https://www.linkedin.com/in/jack-gong/" target="_blank"><img src="/assets/img/icons/linkedin.svg" alt="LinkedIn"/></a>
 			</div>
 			<div id="landing_text">
 				<h1 id="landing_heading">Hi I'm <span>Jack Gong</span>;</h1>
@@ -33,7 +33,7 @@
 
 			<div id="projects_wrapper">
 				{% for post in site.posts %}
-					{% include project.html header=post.title img=post.img %}
+					{% include project.html header=post.title img=post.img framework=post.framework demo_url=post.demo_url %}
 				{% endfor %}
 			</div>
 		</section>

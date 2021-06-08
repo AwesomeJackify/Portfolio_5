@@ -1,4 +1,10 @@
 <div id="project_wrapper">
     <h1>{{ include.header }}</h1>
-    <img src="{{ include.img}}" alt="{{ include.header }}" />
+    <div class="img_and_framework">
+        <img class="project_img" src="{{ include.img}}" alt="{{ include.header }}" />
+        <img class="framework_img" src="{{ include.framework }}" />
+    </div>
+    {% if include.demo_url != "" %}
+        <button class="project_demo_btn" onclick="location.href={{ include.demo_url }}" type="button" target="_blank">View Demo</button>
+    {% endif %}
 </div>
