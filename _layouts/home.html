@@ -31,7 +31,7 @@
 		<section id="projects">
 			<h1 class="heading">My Projects</h1>
 
-			<div class="projects_wrapper">
+			<div id="projects_wrapper">
 				{% for post in site.posts %}
 					{% include project.html header=post.title img=post.img %}
 				{% endfor %}
@@ -80,14 +80,5 @@
 		})
 		}
 	</script>
-	<script>
-		// Check when user scrolled past landing
-		$(document).on('scroll', function() {
-			if ($(this).scrollTop() >= $('#projects').position().top) {
-				$("nav").fadeIn(300)
-			} else {
-				$("nav").fadeOut(300);
-			}
-		})
-	</script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
 </html>
